@@ -1,0 +1,16 @@
+.block {
+    // display: inline-block;
+    padding: 10px;
+    border: 1px solid #1a638b;
+    border-radius: 15px;
+    background: url("../../static/images/lt.png") no-repeat left top,
+        url("../../static/images/rb.png") no-repeat right bottom;
+    background-size: 174px 42px, 174px 42px;
+
+    .warpBox {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+}

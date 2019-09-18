@@ -1,0 +1,23 @@
+# 日志
+logs
+*.log
+
+# 依赖包
+node_modules
+
+views
+
+#打包文件
+#static
+
+# 编辑器生成的文件夹
+.idea
+.vscode
+
+# Mac
+.DS_Store
+
+# webpack-dev-server 本地proxy配置
+localProxy.js
+
+yarn-error.log

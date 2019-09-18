@@ -1,0 +1,78 @@
+.title{
+  color: #3ab0ff;
+  text-align: center;
+  border-bottom: 1px solid rgba(58,176,255,.4);
+  padding-bottom: 20px;
+}
+
+.keyword{
+  color: #ffffff;
+  :global{
+    .ant-modal-content{
+      border: 1px solid rgba(57,232,252,0.7);
+      background-color:#1d417a ;
+      position: relative;
+    }
+    .ant-modal-close{
+      color: rgb(57, 232, 252);
+    }
+  }
+}
+
+.mymodal{
+  display:flex;
+  justify-content: space-between;
+}
+
+.textA,.textB{
+  height: 40px;
+  line-height: 40px;
+}
+
+.lt{
+  position: absolute;
+  top: -27px;
+  left: -28px;
+}
+
+.rb{
+  position: absolute;
+  bottom: -27px;
+  right: -29px;
+}
+
+.leftbox,.rightbox{
+  width: 45%;
+  display: inline-block;
+  >table{
+    width: 100%;
+    >thead{
+      tr:nth-of-type(1){
+        background: rgba(3,171,255,0.6);
+        border-bottom: none;
+      }
+    }
+    tr{
+      height: 42px;
+      text-align: center;
+      border-bottom: 1px solid rgba(58,176,255,.1);
+    }
+    td{
+      text-align: center;
+      padding: 5px;
+      span{
+        display: inline-block;
+        padding: 4px 5px;
+        border-radius: 21px;
+      }
+    }
+  }
+}
+
+.nodata{
+  width: 200%;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+

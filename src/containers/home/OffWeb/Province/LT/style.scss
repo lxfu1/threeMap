@@ -1,0 +1,26 @@
+.container {
+    .activeBox {
+        .ratioBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            float: right;
+            padding: 1rem 0;
+            height: 100%;
+            text-align: center;
+
+            .ratioTop, .ratioBottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 40%;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

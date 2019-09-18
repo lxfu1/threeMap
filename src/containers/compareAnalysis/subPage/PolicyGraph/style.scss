@@ -1,0 +1,20 @@
+.container {
+    color: #fff;
+    height: calc(100vh - 100px);
+}
+
+.imgSample {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    .imgItem {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        > div {
+            display: flex;
+            align-items: center;
+            margin-left: 8px;
+        }
+    }
+}

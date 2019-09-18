@@ -1,0 +1,146 @@
+.container {
+    padding-top: 20rem;
+    height: 100%;
+    color: #fff;
+    background: url("../../static/images/bg_big.png") no-repeat 100%;
+    .content {
+        width: 45rem;
+        margin: 0 auto;
+        padding: 0 0.5rem;
+        > div:last-child > p {
+            line-height: 2.2rem;
+            color: #e5e5e5;
+            font-size: 15px;
+        }
+        > div:first-child {
+            padding: 0 2rem;
+        }
+    }
+
+    .search {
+        height: 2.2rem;
+        box-shadow: 0 0 48px inset rgba(33, 154, 246, 0.38), 0 0 6px rgba(33, 154, 246, 0.5);
+        border: 1px solid #148de9;
+        border-radius: 16px;
+        > img {
+            cursor:pointer;
+            float: right;
+            margin-right: 0.5rem;
+            margin-top: 1px;
+        }
+        > input {
+            width: 80%;
+            padding-left: 1rem;
+            padding-top: 5px;
+            border: none;
+            outline: none;
+            opacity: 0.8;
+            background: transparent;
+        }
+
+        input::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: #fff;
+        }
+        　　input:-moz-placeholder {
+            color: #fff;
+        }
+        input::-moz-placeholder {
+            color: #fff;
+        }
+        　input:-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+
+    .search + div {
+        margin: 4rem 0;
+        height: 13rem;
+        overflow: auto;
+    }
+
+    .words {
+        color: #3696fd;
+        > li {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 2.2rem;
+            margin-bottom: 1.4rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        > li > span {
+            overflow: auto;
+        overflow-x: hidden;
+            padding: 0 0.15rem;
+        }
+    }
+
+    .addNewWord {
+        color: #60d0f3;
+    }
+
+    .leftTopPic {
+        position: absolute;
+        left: -26px;
+        top: -26px;
+    }
+    .buttonRightPic {
+        position: absolute;
+        bottom: -25px;
+        right: -25px;
+    }
+
+    .form {
+        width: 100%;
+        height: 100%;
+        background: #0d295a;
+        overflow: hidden;
+        > div {
+            height: 1.6rem;
+            line-height: 1.6rem;
+            width: 60%;
+            margin: 0 auto;
+            border-radius: 16px;
+        }
+        > div:first-child {
+            margin-top: 40px;
+            > input {
+                outline: none;
+                width: 100%;
+                border: 1px solid #2f88c8;
+                background-color: #142e4f;
+                box-shadow: 0 0 2px #aaa;
+                border-radius: 16px;
+                background-size: 10% 80%;
+                box-sizing: border-box;
+                padding-left: 1rem;
+                opacity: 0.8;
+            }
+            input::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: #fff;
+            }
+            　　input:-moz-placeholder {
+                color: #fff;
+            }
+            input::-moz-placeholder {
+                color: #fff;
+            }
+            　input:-ms-input-placeholder {
+                color: #fff;
+            }
+        }
+
+        > div:last-child {
+            margin-top: 30px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            background: -webkit-linear-gradient(left, #3698ff, #3ae3ff); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #3698ff, #3ae3ff); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #3698ff, #3ae3ff); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #3698ff, #3ae3ff); /* 标准的语法（必须放在最后） */
+        }
+    }
+}

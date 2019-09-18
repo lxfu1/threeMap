@@ -1,0 +1,25 @@
+.nationalContainer {
+    height: 100%;
+    color: #fff;
+
+    .l_box {
+        position: relative;
+        display: inline-block;
+        width: 64.5%;
+        height: 100%;
+
+        .yearPicker {
+            position: absolute;
+            top: 10px;
+            left: 65px;
+            width: 10rem;
+            z-index: 100;
+        }
+    }
+
+    .r_box {
+        float: right;
+        width: 35.5%;
+        height: 100%;
+    }
+}

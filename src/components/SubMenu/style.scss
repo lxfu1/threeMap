@@ -1,0 +1,89 @@
+$bgColor: rgba(16, 36, 75, .9);
+
+.root {
+    position: absolute;
+    display: inline-block;
+    padding: 8px 0;
+    top: 24px;
+    left: 20px;
+    width: 125px;
+    text-align: center;
+    background: $bgColor;
+    border-top: 3px solid #25599b;
+    border-bottom: 3px solid #25599b;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #10244b;
+
+    .subItem {
+        display: block;
+        margin: 9px 0;
+        height: 1.875rem;
+        line-height: 1.875rem;
+        text-decoration: none;
+        color: #3e5e87;
+
+        &:first-child, &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            position: relative;
+            background:
+            linear-gradient(to right, rgba(32, 101, 150, 1)  15%, rgba(24, 66, 122, 0.9), rgba(32, 101, 150, 0.9));
+            color: #3ab0ff;
+
+            &:before {
+                position: absolute;
+                top: -.5rem;
+                left: -11px;
+                width: 27px;
+                height: 2.9rem;
+                content: '';
+                background: url('../../images/sub_active_l.png') 50% 50% no-repeat;
+                background-size: 204% 170%;
+            }
+
+            &:after {
+                position: absolute;
+                top: -.5rem;
+                right: -11px;
+                width: 27px;
+                height: 2.9rem;
+                content: '';
+                background: url('../../images/sub_active_l.png') 50% 50% no-repeat;
+                background-size: 204% 170%;
+                transform: rotate(.5turn);
+            }
+        }
+    }
+
+    .activeItem {
+        position: relative;
+        background:
+        linear-gradient(to right, rgba(32, 101, 150, 1)  15%, rgba(24, 66, 122, 0.9), rgba(32, 101, 150, 0.9));
+        color: #3ab0ff;
+
+        &:before {
+            position: absolute;
+            top: -.5rem;
+            left: -11px;
+            width: 27px;
+            height: 2.9rem;
+            content: '';
+            background: url('../../images/sub_active_l.png') 50% 50% no-repeat;
+            background-size: 204% 170%;
+        }
+
+        &:after {
+            position: absolute;
+            top: -.5rem;
+            right: -11px;
+            width: 27px;
+            height: 2.9rem;
+            content: '';
+            background: url('../../images/sub_active_l.png') 50% 50% no-repeat;
+            background-size: 204% 170%;
+            transform: rotate(.5turn);
+        }
+    }
+}

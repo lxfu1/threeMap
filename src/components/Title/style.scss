@@ -1,0 +1,36 @@
+.wrap {
+    position: relative;
+    height: 2.75rem;
+    line-height: 2.75rem;
+
+    h3 {
+        margin: 0;
+        display: inline-block;
+        min-width: 12.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        border-bottom: 1px solid #868e9f;
+
+        .all {
+            img {
+                width: 24px;
+                height: 22px;
+                transform: translateY(-8%);
+            }
+        }
+    }
+
+    .more {
+        position: absolute;
+        top: .6rem;
+        right: 0;
+        width: 55px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: #242630;
+        border-radius: 15px;
+        background: #3ab0ff;
+    }
+}

@@ -1,0 +1,144 @@
+.container {
+    position: relative;
+    padding: 5rem 2rem 2rem 0;
+    height: calc(100vh - 4.6rem);
+    color: #fff;
+    overflow: hidden;
+    .dragbox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .drag {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .inner {
+        position: relative;
+    }
+    .svg {
+        path {
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 0;
+            animation: dash 1s linear;
+        }
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 2000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        circle {
+            opacity: 0;
+            animation: fadeCircle .3s .3s linear forwards;
+        }
+        @keyframes fadeCircle {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: .6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    .item_box {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        left: 0;
+        top: 0;
+    }
+    .relative {
+        position: relative;
+    }
+    .location {
+        position: absolute;
+    }
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 666;
+        width: 80px;
+        height: 30px;
+        border: 0;
+        border-radius: 15px;
+        color: #120f24;
+        background: linear-gradient(to right, #3698ff, #3ae3ff);
+        outline: none;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+.title {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+}
+.contentBox {
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-indent: 2em;
+    margin: 20px;
+}
+.addBtn {
+    float: right;
+    width: 120px;
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    color: #120f24;
+    background: linear-gradient(to right, #3698ff, #3ae3ff);
+    outline: none;
+    &:hover {
+        opacity: .8;
+    }
+}
+:global(.ant-modal) {
+    padding-bottom: 0 !important;
+}
+:global(.ant-modal-content) {
+    background: #1f3e6d !important;
+    border: 1px solid #3ab0ff !important;
+}
+:global(.ant-modal-close-x) {
+    color: #3ab0ff;
+}
+.btn {
+    margin-top: 40px;
+    text-align: center;
+    button {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        outline: none;
+        border: 0;
+        border-radius: 15px;
+        margin: 0 40px;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .cancelBtn {
+        color: #120f24;
+        background: linear-gradient(to right, #3698ff, #0cbeff);
+    }
+    .sureBtn {
+        color: #fff;
+        background: linear-gradient(to right, #3698ff, #3ae3ff);
+    }
+}

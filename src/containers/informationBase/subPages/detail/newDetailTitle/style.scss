@@ -1,0 +1,29 @@
+.container {
+    > h3 {
+        color: white;
+        font-size: 1rem;
+        padding-top: 2.5rem;
+        padding-left: 6.3rem;
+        padding-bottom: 3.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+        border-bottom: 1px solid #868e9c;
+    }
+    > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 7rem;
+        padding: 3rem 6rem;
+        > li {
+            flex-grow: 1;
+        }
+        :nth-child(2) {
+            text-align: center;
+        }
+        :nth-child(3) {
+            text-align: right;
+        }
+    }
+}

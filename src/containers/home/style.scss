@@ -1,0 +1,9 @@
+.container {
+    position: relative;
+    padding-left: calc(2% + 125px);
+    min-height: calc(100vh - 4.6rem);
+
+    .subContent {
+        min-height: calc(100vh - 4.6rem);
+    }
+}

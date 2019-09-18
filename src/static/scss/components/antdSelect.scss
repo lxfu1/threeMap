@@ -1,0 +1,12 @@
+:global {
+    .ant-select-selection {
+        border-radius: 20px!important;
+        border: 1px solid #148de9!important;
+        background-color: transparent!important;
+        color: #fff!important;
+
+        .ant-select-arrow {
+            color: #148de9!important;
+        }
+    }
+}

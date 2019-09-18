@@ -1,0 +1,152 @@
+.modals{
+  color: #ffffff;
+  :global{
+    .ant-modal-content{
+      color: #ffffff;
+      border: 1px solid rgba(57,232,252,0.7);
+      background-color:#1d417a ;
+      position: relative;
+    }
+    .ant-modal-close{
+      width:20px;
+      height: 30px;
+    }
+    .ant-modal-close-x{
+      color: #3ab0ff;
+      width: 21px;
+      height: 30px;
+      line-height: 30px
+    }
+  }
+}
+
+.title{
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 33px;
+  margin-bottom: 14px;
+}
+
+.titles{
+  cursor: pointer;
+}
+
+.suptitle{
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 33px;
+  margin-bottom: 14px;
+}
+
+.hightitle{
+  color: rgb(58, 176, 255);
+  cursor: pointer;
+}
+
+.lt{
+  position: absolute;
+  left: -27px;
+  top:  -27px;
+
+}
+
+.rb{
+  position: absolute;
+  right:  -28px;
+  bottom: -27px;
+}
+
+.twobtn{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  >span{
+    width: 155px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  >button{
+    box-shadow: 0 0 48px inset rgba(33, 154, 246, 0.38), 0 0 6px rgba(33, 154, 246, 0.5);
+    border: 1px solid #148de9;
+    width: 155px;
+    background: none;
+    border-radius: 20px;
+    color: #3ab0ff;
+    outline: none;
+  }
+}
+.detail{
+  h1{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px auto;
+  }
+  height: 600px;
+  overflow-y: auto;
+  pre{
+    white-space: pre-wrap;
+  }
+}
+
+.nodata{
+  text-align: center;
+  line-height: 600px;
+}
+
+.willAdd {
+  box-shadow: 0 0 48px inset rgba(33, 154, 246, 0.38), 0 0 6px rgba(33, 154, 246, 0.5);
+  border: 1px solid #148de9;
+}
+
+.normal{
+  background: linear-gradient(to right, #3698ff, #3ae3ff);
+  border: 1px solid #148de9;
+  color: #000;
+}
+
+.importMod{
+  color: #ffffff;
+  text-align: center;
+  .btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: #3ab0ff;
+    border-radius: 10px;
+    margin: 54px auto;
+    color: #000;
+  }
+  >div{
+    height: 200px;
+    line-height: 200px;
+    margin-top: 40px;
+  }
+  .zhengce{
+    margin-top: 10%;
+  }
+  :global{
+    .ant-modal-content{
+      color: #ffffff;
+      border: 1px solid rgba(57,232,252,0.7);
+      background-color:#1d417a ;
+      position: relative;
+    }
+    .ant-modal-close{
+      width:20px;
+      height: 30px;
+    }
+    .ant-modal-close-x{
+      color: #3ab0ff;
+      width: 21px;
+      height: 30px;
+      line-height: 30px
+    }
+  }
+}
+.overflows{
+  height: 60px;
+  overflow-y: auto;
+}

@@ -1,0 +1,66 @@
+@import '../../../../assets/Colors/colors.scss';
+
+.container {
+    color: #fff;
+    .topPartOne {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        .topPartOneLeft {
+            > * {
+                margin-right: 10px;
+            }
+        }
+        .topPartOneRight {
+            .markWordContainer {
+                display: inline-block;
+                margin-right: 30px;
+                font-size: 14px;
+                > b {
+                    font-weight: bold;
+                    color: $iconBlue;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .topPartSecond {
+        display: flex;
+        height: 28px;
+        padding: 0 35px;
+        background-color: $navyBlue;
+        align-items: center;
+        > span {
+            margin-right: 15px;
+        }
+    }    
+    .basicPadding {
+        padding: 0 35px;
+    }
+    .chartContainer {
+        height: calc(100vh - 300px);
+        > div {
+            height: calc((100vh - 320px)/2);
+            padding: 8px 0;
+            > span {
+                font-weight: bold;
+                color: $primaryBlue;
+                display: block;
+            }
+        }
+    }
+    .chartAreaContainer {
+        height: calc(100vh - 300px);
+    }
+}
+
+.titleContainer {
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}

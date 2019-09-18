@@ -1,0 +1,203 @@
+.container {
+  padding: 2rem 2rem 2rem 0;
+  color: #fff;
+  br {
+    margin: 0.3125rem;
+  }
+}
+.back{
+  font-size: 1.1rem;
+  width: 7.6875rem;
+  height: 1.875rem;
+  border: none;
+  background: #3ab0ff;
+  color: #000;
+  border-radius: 1.25rem;
+}
+.text{
+  display: flex;
+  justify-content: space-between;
+}
+.imports{
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem 0;
+  > div{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3ab0ff;
+  };
+  > button{
+    font-size: 1.1rem;
+    width: 11.25rem;
+    height: 2.3rem;
+    color: #000;
+    border: none;
+    border-radius: 1.25rem;
+    background: -webkit-linear-gradient(left, #3ab0ff , #3addff);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3ab0ff, #3addff);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3ab0ff, #3addff);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3ab0ff , #3addff);
+    /* 标准的语法（必须放在最后） */
+  }
+  .imgUploadContainer {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 4px;
+    &:hover {
+      cursor: pointer;
+    }
+    .file {
+      position: relative;
+      display: inline-block;
+      width: 11.25rem;
+      text-align: center;
+      background: linear-gradient(to right, #3ab0ff , #3addff);
+      border: none;
+      border-radius: 1.25rem;
+      padding: 4px 12px;
+      overflow: hidden;
+      color: #000;
+      text-decoration: none;
+      text-indent: 0;
+      line-height: 20px;
+      font-weight: normal;
+    }
+    .file input {
+      position: absolute;
+      font-size: 100px;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .file:hover {
+      text-decoration: none;
+    }
+  }
+}
+.leftcon,.rightcon{
+  width: 45%;
+}
+.leftcons{
+  position: relative;
+  border: 1px solid rgba(21, 78, 103, 0.6);
+  width: 100%;
+  height: calc(100vh - 4.6rem - 16px - 4rem - 1.875rem - 2.5rem - 34px);
+  padding: 1.875rem;
+  box-shadow: 0 0 4px 1px rgba(21, 78, 103, 0.6);
+  display: flex;
+  flex-direction: column;
+  > pre {
+    height: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    flex: 1;
+  }
+}
+.contentcon{
+  text-align: center;
+  width: 12.5rem;
+  margin-top: 15.5rem;
+  >button{
+    margin: 1.3rem 0;
+    width: 10.5rem;
+    height: 2.5rem;
+    border: 1px solid #3ab0ff;
+    background: none;
+    border-radius: 1.25rem;
+    outline: none;
+    font-size: 1.1rem;
+    color: #3ab0ff;
+  }
+}
+
+
+.llt{
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+}
+
+.lrb{
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+}
+
+.rlt{
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
+.rrb{
+  position: absolute;
+  right: -2rem;
+  bottom: -2.0rem;
+}
+
+.texta,.textb{
+  margin-top: 20px;
+  height: 100px;
+}
+
+@media all and(min-width: 1920px) {
+  .llt{
+    position: absolute;
+    left: -1.8rem;
+    top: -1.8rem;
+  }
+
+  .lrb{
+    position: absolute;
+    right: -1.8rem;
+    bottom: -1.8rem;
+  }
+
+  .rlt{
+    position: absolute;
+    top: -1.8rem;
+    left: -1.8rem;
+  }
+
+  .rrb{
+    position: absolute;
+    right: -1.8rem;
+    bottom: -1.8rem;
+  }
+}
+
+.LoadingContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+      z-index: 999;
+  }
+  > i {
+      z-index: 1000;
+  }
+  .blurDiv {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(67, 82, 102, 0.7);
+      filter: blur(5px);
+  }
+}
